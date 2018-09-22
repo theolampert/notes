@@ -7,5 +7,5 @@ Prerequisites:
 Installation:
 ```
 npm i
-npm start dev
+npm start
 ```
