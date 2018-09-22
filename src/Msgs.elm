@@ -1,6 +1,6 @@
 module Msgs exposing (Msg(..))
 
-import Browser exposing (UrlRequest, application)
+import Browser exposing (UrlRequest)
 import Models exposing (Note)
 import Time exposing (Posix)
 import Url exposing (Url)

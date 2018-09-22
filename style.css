@@ -4,7 +4,6 @@
   padding: 0;
 }
 
-
 body {
   font-family: sans-serif;
 }
@@ -52,6 +51,7 @@ body {
 .note-detail {
   width: calc((4 / 5) * 100%);
 }
+
 .note-detail {
   height: 100vh;
   width: 100%;
@@ -61,11 +61,6 @@ body {
 .note-detail textarea {
   border: none;
   font-size: 20px;
-
   height: 100%;
   width: 100%;
-}
-
-.save-note-button {
-
 }

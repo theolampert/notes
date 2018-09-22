@@ -44,12 +44,13 @@ update msg model =
         PersistNote now ->
             ( { model | notes = updateOrCreateNote model now }, Cmd.none )
 
-        -- Mutate the 'Focused' note
+        -- Update the 'Focused' note's text and call Persist message
         UpdateNote text ->
             ( { model | focusedNote = setNoteText text model.focusedNote }
             , Task.perform PersistNote Time.now
             )
 
+        -- Set the 'Focused' note by parsing the url path
         OnUrlChange url ->
             ( { model
                 | route = Routing.parseUrl url
