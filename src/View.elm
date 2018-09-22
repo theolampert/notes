@@ -57,7 +57,7 @@ noteListView notes =
             Routing.notePath (String.fromInt (List.length notes))
     in
     div [ class "note-list" ]
-        [ a [ href newNotePath, class "new-note" ] [ text "➕ New Note" ]
+        [ a [ href newNotePath, class "new-note", onClick (UpdateNote " ") ] [ text "➕ New Note" ]
         , ul []
             (List.map noteListItemView notes)
         ]
